@@ -8,6 +8,6 @@
 
 #### Andrés Arango
 
-#### E2
+#### Juan Diego Gil
 
 #### E3
