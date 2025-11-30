@@ -1,0 +1,16 @@
+# Archivos generados por Gradle
+.gradle/
+build/
+
+# Archivos de IntelliJ / VSCode
+.idea/
+*.iml
+.vscode/
+
+# Archivos temporales del sistema
+*.log
+*.tmp
+
+# Archivos de OS
+.DS_Store
+Thumbs.db
