@@ -1,0 +1,49 @@
+# Ignore data files and large CSVs
+*.csv
+*.zip
+deploy_package.zip
+# Ignore local outbox and runtime logs
+outbox/
+**/outbox/
+*.log
+worker_run.log
+streaming_run.log
+worker_fixed.log
+streaming_fixed.log
+# Maven / Java
+/target/
+**/target/
+*.class
+*.jar
+*.war
+dependency-reduced-pom.xml
+# IDEs and editors
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+/.classpath
+/.project
+# OS files
+Thumbs.db
+.DS_Store
+# JavaFX SDK (optional - ignore if you don't want to commit SDK binaries)
+javafx-sdk-*/
+# Temp and build helpers
+*.tmp
+*.bak
+*.swp
+# Logs and runtime state
+logs/
+*.pid
+# Node modules (if any)
+node_modules/
+# Python virtualenvs (if any)
+venv/
+ENV/
+# Maven wrapper cache
+.mvn/
+# coverage and test reports
+coverage/
+reports/

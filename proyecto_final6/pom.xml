@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.sitm</groupId>
+  <artifactId>sitm-velocity</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>SITM Velocity Multimodule</name>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <ice.version>3.7.10</ice.version>
+    <!-- Command used to invoke slice2java. If slice2java is not in PATH, override this property -->
+    <slice2java.exec>slice2java</slice2java.exec>
+  </properties>
+
+  <modules>
+    <module>common</module>
+    <module>master</module>
+    <module>worker</module>
+    <module>streaming</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.zeroc</groupId>
+        <artifactId>ice</artifactId>
+        <version>${ice.version}</version>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>
